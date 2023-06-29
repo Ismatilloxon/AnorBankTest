@@ -2,7 +2,7 @@
 //  UIEdge.swift
 //  Anor Bank Test
 //
-//  Created by Ismatilla.adm on 25/06/23.
+//  Created by Ismatilloxon Marudkhonov on 29/06/23.
 //
 
 import UIKit
@@ -21,17 +21,17 @@ extension UIEdgeInsets {
         self = .all(margin)
     }
 
-    public static func top(_ margin: CGFloat) -> UIEdgeInsets {
+    public static func topLeft(_ margin: CGFloat, _ left: CGFloat = .zero) -> UIEdgeInsets {
         self.init(
             top: margin,
-            left: .zero,
+            left: left,
             bottom: .zero,
             right: .zero
         )
     }
 
     public init(top margin: CGFloat) {
-        self = .top(margin)
+        self = .topLeft(margin)
     }
 
     public static func left(_ margin: CGFloat) -> UIEdgeInsets {

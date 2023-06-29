@@ -2,15 +2,14 @@
 //  CurrencyField.swift
 //  Anor Bank Test
 //
-//  Created by Ismatilla.adm on 27/06/23.
+//  Created by Ismatilloxon Marudkhonov on 29/06/23.
 //
 
 import UIKit
 
 extension CurrencyField {
     enum Action {
-        case amountDidChange(String?)
-        case currencyDidChange(CurrencyType)
+        case targetCurrencyDidChange(CurrencyType)
     }
     
     fileprivate enum Constants: CGFloat {
@@ -24,6 +23,7 @@ extension CurrencyField {
         case flagSize = 25
         case currencyFlagSpacing = 3
         case fieldViewHeight = 45
+        case rateTopInset = 18
     }
 }
 
@@ -41,6 +41,7 @@ final class CurrencyField: UIView {
     }
     private let amountLabel = UILabel().then {
         $0.textColor = .green
+        $0.isHidden = true
     }
     private let selectionButton = UIButton().then {
         $0.setImage(UIImage(systemName: "arrowtriangle.down.fill"), for: .normal)
@@ -76,8 +77,13 @@ final class CurrencyField: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func showAlert() {
-       
+    func setCurrencyRate(amount: String) {
+        amountLabel.isHidden = amount == "0.0"
+        amountLabel.text = amount == "Progress....." ? amount : amount.formatted()
+    }
+    
+    func hideCurrencyRate() {
+        amountLabel.isHidden = true
     }
 }
 
@@ -118,8 +124,8 @@ extension CurrencyField {
             
             $0.translatesAutoresizingMaskIntoConstraints = false
             $0.leading(leadingAnchor)
-            $0.top(textField.bottomAnchor, Constants.borderWidth.rawValue)
-            $0.height(Constants.titleHeight.rawValue)
+            $0.top(textField.bottomAnchor, Constants.flagSize.rawValue)
+            $0.height(Constants.rateTopInset.rawValue)
         }
         
         selectionButton.then {
@@ -148,15 +154,14 @@ extension CurrencyField {
         
         currencyFlag.then {
             currencyView.addArrangedSubview($0)
-            $0.width(35)
-            $0.height(25)
+            $0.width(Constants.currencyViewHeight.rawValue)
+            $0.height(Constants.flagSize.rawValue)
         }
         
         currencyLabel.then {
             currencyView.addArrangedSubview($0)
             $0.Y(currencyView.centerYAnchor)
         }
-
     }
 }
 
@@ -170,14 +175,22 @@ extension CurrencyField: UIPickerViewDelegate, UIPickerViewDataSource {
         return CurrencyType.allCases.count
     }
 
-    func pickerView( _ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    func pickerView(
+        _ pickerView: UIPickerView,
+        titleForRow row: Int,
+        forComponent component: Int
+    ) -> String? {
         return CurrencyType.allCases[row].rawValue
     }
 
-    func pickerView( _ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    func pickerView(
+        _ pickerView: UIPickerView,
+        didSelectRow row: Int,
+        inComponent component: Int
+    ) {
         currencyLabel.text = CurrencyType.allCases[row].rawValue
         endEditing(true)
-//        actionHandler?(.currencyDidChange(CurrencyType.allCases[row]))
+        actionHandler?(.targetCurrencyDidChange(CurrencyType.allCases[row]))
         textField.text = nil
         currencyFlag.image = UIImage(named: CurrencyType.allCases[row].rawValue)
     }

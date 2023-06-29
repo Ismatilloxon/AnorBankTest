@@ -8,22 +8,48 @@
 
 /* Begin PBXBuildFile section */
 		631063E52A46BB7F0037ACE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631063E42A46BB7F0037ACE9 /* AppDelegate.swift */; };
-		631063E72A46BB7F0037ACE9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631063E62A46BB7F0037ACE9 /* SceneDelegate.swift */; };
 		631063E92A46BB7F0037ACE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631063E82A46BB7F0037ACE9 /* ViewController.swift */; };
-		631063EC2A46BB7F0037ACE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 631063EA2A46BB7F0037ACE9 /* Main.storyboard */; };
 		631063EE2A46BB800037ACE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 631063ED2A46BB800037ACE9 /* Assets.xcassets */; };
 		631063F12A46BB800037ACE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 631063EF2A46BB800037ACE9 /* LaunchScreen.storyboard */; };
+		631063FA2A46BDFB0037ACE9 /* StackViewOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631063F92A46BDFB0037ACE9 /* StackViewOptions.swift */; };
+		631063FC2A46BE7C0037ACE9 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631063FB2A46BE7C0037ACE9 /* StackView.swift */; };
+		631063FE2A46BEBE0037ACE9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631063FD2A46BEBE0037ACE9 /* MainView.swift */; };
+		631064002A46C1220037ACE9 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631063FF2A46C1220037ACE9 /* DataService.swift */; };
+		631064032A46E2B60037ACE9 /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631064022A46E2B60037ACE9 /* CurrencyModel.swift */; };
+		631064052A46E3590037ACE9 /* ExchangeRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631064042A46E3590037ACE9 /* ExchangeRates.swift */; };
+		631064082A471F8D0037ACE9 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631064072A471F8D0037ACE9 /* ViewModel.swift */; };
+		631064242A48884F0037ACE9 /* UIEdgeInsets+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631064232A48884F0037ACE9 /* UIEdgeInsets+Extension.swift */; };
+		631064262A4933030037ACE9 /* ThenExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631064252A4933030037ACE9 /* ThenExtension.swift */; };
+		631064282A49372A0037ACE9 /* AmountField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631064272A49372A0037ACE9 /* AmountField.swift */; };
+		63E2F6AD2A4A875E007DC1E7 /* UIView+Embed_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E2F6AC2A4A875E007DC1E7 /* UIView+Embed_Extension.swift */; };
+		63E2F6AF2A4A877C007DC1E7 /* NSLayoutConstraint_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E2F6AE2A4A877C007DC1E7 /* NSLayoutConstraint_Extension.swift */; };
+		63E2F6B12A4AA677007DC1E7 /* CurrencyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E2F6B02A4AA677007DC1E7 /* CurrencyField.swift */; };
+		63E2F6B32A4ABB90007DC1E7 /* UIApplication_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E2F6B22A4ABB90007DC1E7 /* UIApplication_Extension.swift */; };
+		63E2F6B52A4AE7DB007DC1E7 /* NumberFormatter_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E2F6B42A4AE7DB007DC1E7 /* NumberFormatter_Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		631063E12A46BB7F0037ACE9 /* Anor Bank Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Anor Bank Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		631063E42A46BB7F0037ACE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		631063E62A46BB7F0037ACE9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		631063E82A46BB7F0037ACE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		631063EB2A46BB7F0037ACE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		631063ED2A46BB800037ACE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		631063F02A46BB800037ACE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		631063F22A46BB800037ACE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		631063F92A46BDFB0037ACE9 /* StackViewOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewOptions.swift; sourceTree = "<group>"; };
+		631063FB2A46BE7C0037ACE9 /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
+		631063FD2A46BEBE0037ACE9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		631063FF2A46C1220037ACE9 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		631064022A46E2B60037ACE9 /* CurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyModel.swift; sourceTree = "<group>"; };
+		631064042A46E3590037ACE9 /* ExchangeRates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRates.swift; sourceTree = "<group>"; };
+		631064072A471F8D0037ACE9 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		631064232A48884F0037ACE9 /* UIEdgeInsets+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Extension.swift"; sourceTree = "<group>"; };
+		631064252A4933030037ACE9 /* ThenExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThenExtension.swift; sourceTree = "<group>"; };
+		631064272A49372A0037ACE9 /* AmountField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountField.swift; sourceTree = "<group>"; };
+		63E2F6AC2A4A875E007DC1E7 /* UIView+Embed_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Embed_Extension.swift"; sourceTree = "<group>"; };
+		63E2F6AE2A4A877C007DC1E7 /* NSLayoutConstraint_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraint_Extension.swift; sourceTree = "<group>"; };
+		63E2F6B02A4AA677007DC1E7 /* CurrencyField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyField.swift; sourceTree = "<group>"; };
+		63E2F6B22A4ABB90007DC1E7 /* UIApplication_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication_Extension.swift; sourceTree = "<group>"; };
+		63E2F6B42A4AE7DB007DC1E7 /* NumberFormatter_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatter_Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +82,60 @@
 		631063E32A46BB7F0037ACE9 /* Anor Bank Test */ = {
 			isa = PBXGroup;
 			children = (
+				63E2F6AB2A4A8720007DC1E7 /* Extensions */,
+				631064062A4719E80037ACE9 /* Services */,
+				631064012A46E2AA0037ACE9 /* Models */,
+				631063F82A46BDF20037ACE9 /* Components */,
 				631063E42A46BB7F0037ACE9 /* AppDelegate.swift */,
-				631063E62A46BB7F0037ACE9 /* SceneDelegate.swift */,
 				631063E82A46BB7F0037ACE9 /* ViewController.swift */,
-				631063EA2A46BB7F0037ACE9 /* Main.storyboard */,
+				631064072A471F8D0037ACE9 /* ViewModel.swift */,
+				631063FD2A46BEBE0037ACE9 /* MainView.swift */,
 				631063ED2A46BB800037ACE9 /* Assets.xcassets */,
 				631063EF2A46BB800037ACE9 /* LaunchScreen.storyboard */,
 				631063F22A46BB800037ACE9 /* Info.plist */,
 			);
 			path = "Anor Bank Test";
+			sourceTree = "<group>";
+		};
+		631063F82A46BDF20037ACE9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				631064272A49372A0037ACE9 /* AmountField.swift */,
+				63E2F6B02A4AA677007DC1E7 /* CurrencyField.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		631064012A46E2AA0037ACE9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				631064022A46E2B60037ACE9 /* CurrencyModel.swift */,
+				631064042A46E3590037ACE9 /* ExchangeRates.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		631064062A4719E80037ACE9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				631063FF2A46C1220037ACE9 /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		63E2F6AB2A4A8720007DC1E7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				631063F92A46BDFB0037ACE9 /* StackViewOptions.swift */,
+				631063FB2A46BE7C0037ACE9 /* StackView.swift */,
+				631064232A48884F0037ACE9 /* UIEdgeInsets+Extension.swift */,
+				631064252A4933030037ACE9 /* ThenExtension.swift */,
+				63E2F6AC2A4A875E007DC1E7 /* UIView+Embed_Extension.swift */,
+				63E2F6AE2A4A877C007DC1E7 /* NSLayoutConstraint_Extension.swift */,
+				63E2F6B22A4ABB90007DC1E7 /* UIApplication_Extension.swift */,
+				63E2F6B42A4AE7DB007DC1E7 /* NumberFormatter_Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +198,6 @@
 			files = (
 				631063F12A46BB800037ACE9 /* LaunchScreen.storyboard in Resources */,
 				631063EE2A46BB800037ACE9 /* Assets.xcassets in Resources */,
-				631063EC2A46BB7F0037ACE9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +208,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				631064052A46E3590037ACE9 /* ExchangeRates.swift in Sources */,
+				631064082A471F8D0037ACE9 /* ViewModel.swift in Sources */,
+				63E2F6AD2A4A875E007DC1E7 /* UIView+Embed_Extension.swift in Sources */,
+				63E2F6B12A4AA677007DC1E7 /* CurrencyField.swift in Sources */,
+				631064032A46E2B60037ACE9 /* CurrencyModel.swift in Sources */,
 				631063E92A46BB7F0037ACE9 /* ViewController.swift in Sources */,
+				63E2F6B32A4ABB90007DC1E7 /* UIApplication_Extension.swift in Sources */,
 				631063E52A46BB7F0037ACE9 /* AppDelegate.swift in Sources */,
-				631063E72A46BB7F0037ACE9 /* SceneDelegate.swift in Sources */,
+				631063FE2A46BEBE0037ACE9 /* MainView.swift in Sources */,
+				631064262A4933030037ACE9 /* ThenExtension.swift in Sources */,
+				631064242A48884F0037ACE9 /* UIEdgeInsets+Extension.swift in Sources */,
+				63E2F6B52A4AE7DB007DC1E7 /* NumberFormatter_Extension.swift in Sources */,
+				63E2F6AF2A4A877C007DC1E7 /* NSLayoutConstraint_Extension.swift in Sources */,
+				631064002A46C1220037ACE9 /* DataService.swift in Sources */,
+				631063FA2A46BDFB0037ACE9 /* StackViewOptions.swift in Sources */,
+				631063FC2A46BE7C0037ACE9 /* StackView.swift in Sources */,
+				631064282A49372A0037ACE9 /* AmountField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		631063EA2A46BB7F0037ACE9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				631063EB2A46BB7F0037ACE9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		631063EF2A46BB800037ACE9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +292,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +346,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -290,10 +366,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Anor Bank Test/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,10 +393,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Anor Bank Test/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

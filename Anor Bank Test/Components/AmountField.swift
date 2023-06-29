@@ -2,12 +2,10 @@
 //  SelectionView.swift
 //  Anor Bank Test
 //
-//  Created by Ismatilla.adm on 26/06/23.
+//  Created by Ismatilloxon Marudkhonov on 29/06/23.
 //
 
 import UIKit
-
-
 
 extension AmountField {
     enum Action {
@@ -64,7 +62,7 @@ final class AmountField: UIView {
     //MARK: Helpers
     private let actionHandler: ((Action) -> Void)?
     
-    init(actionHandler: ((Action) -> Void)?) {
+    init(actionHandler: (@escaping (Action) -> Void)) {
         self.actionHandler = actionHandler
         super.init(frame: .zero)
         
@@ -76,7 +74,9 @@ final class AmountField: UIView {
     }
     
     @objc private func editingChanged(_ textField: UITextField) {
-        actionHandler?(.amountDidChange(textField.text))
+        guard let amount = textField.text?.numberWithSpace() else { return }
+        textField.text = amount
+        actionHandler?(.amountDidChange(amount))
     }
     
     func setKeyboardType() {
@@ -108,7 +108,7 @@ extension AmountField {
             ).isActive = true
             $0.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
             $0.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
-            $0.height(45)
+            $0.height(Constants.tfHeight.rawValue)
         }
         
         selectionButton.then {
@@ -147,8 +147,8 @@ extension AmountField {
         
         currencyFlag.then {
             currencyView.addArrangedSubview($0)
-            $0.width(35)
-            $0.height(25)
+            $0.width(Constants.currencyViewHeight.rawValue)
+            $0.height(Constants.flagSize.rawValue)
         }
         
         currencyLabel.then {

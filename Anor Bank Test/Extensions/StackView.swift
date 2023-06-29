@@ -2,7 +2,7 @@
 //  StackView.swift
 //  Anor Bank Test
 //
-//  Created by Ismatilla.adm on 24/06/23.
+//  Created by Ismatilloxon Marudkhonov on 29/06/23.
 //
 
 import UIKit
