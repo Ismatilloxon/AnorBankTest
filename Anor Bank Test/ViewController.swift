@@ -46,6 +46,8 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()                
         binding()
+        
+        view.overrideUserInterfaceStyle = .light
     }
     
     func binding() {
